@@ -1,1 +1,14 @@
+name: Hallo Workflow
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  hallo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "Hallo Sina, ich laufe auf einem Runner!"
+      - run: ls -la
 
